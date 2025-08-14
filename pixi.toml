@@ -1,0 +1,17 @@
+[workspace]
+authors = ["Claudius Kienle <claudius.kienle@tu-darmstadt.de>"]
+channels = ["conda-forge"]
+name = "predicators"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.8.*"
+
+[pypi-dependencies]
+pybullet = "*"
+numpy = "*"
+pddlgym = "==0.0.4"
+pyperplan = { git = "https://github.com/aibasel/pyperplan", branch = "main" }

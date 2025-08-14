@@ -24,7 +24,8 @@ class LOFT(BaseApproach):
 
     def _get_operators(self, data):
         demos, random_data = data
-        transition_data = self._extract_transition_data(demos+random_data)
+        transition_data = demos
+        # transition_data = self._extract_transition_data(demos+random_data)
         ndrs = self._learn_all_ndrs(transition_data)
         operators = ndrs_to_operators(ndrs)
         print("Learned operators:")
